@@ -1,0 +1,1595 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#101611">
+<meta name="description" content="حنان - صابون طبيعي وشموع فاخرة مستوحاة من الطبيعة.">
+<title>حنان | Natural Luxury</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+:root {
+  --black:#101611;
+  --green:#183b2b;
+  --green2:#254b38;
+  --gold:#c5a568;
+  --cream:#eee9dc;
+  --muted:#b9b4a7;
+}
+
+* {
+  box-sizing:border-box;
+}
+
+html {
+  scroll-behavior:smooth;
+}
+
+body {
+  margin:0;
+  background:var(--black);
+  color:var(--cream);
+  font-family:'Cairo',sans-serif;
+  overflow-x:hidden;
+}
+
+a {
+  color:inherit;
+  text-decoration:none;
+}
+
+button,input,select,textarea {
+  font:inherit;
+}
+
+.wrap {
+  width:min(1180px,90%);
+  margin:auto;
+}
+
+/* NAVIGATION */
+
+header {
+  position:fixed;
+  inset:0 0 auto;
+  z-index:20;
+  background:rgba(16,22,17,.72);
+  backdrop-filter:blur(16px);
+  border-bottom:1px solid #c5a56830;
+}
+
+.nav {
+  height:78px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.navlinks {
+  display:flex;
+  gap:28px;
+  font-size:13px;
+  color:#ded8ca;
+}
+
+.navlinks a:hover {
+  color:var(--gold);
+}
+
+.brand {
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+  text-align:center;
+  line-height:1;
+}
+
+.brand .crown {
+  display:block;
+  color:var(--gold);
+  font-size:19px;
+  margin-bottom:5px;
+}
+
+.brand strong {
+  font-size:24px;
+  letter-spacing:4px;
+}
+
+.nav-icons {
+  display:flex;
+  gap:18px;
+  color:var(--gold);
+}
+
+.menu {
+  display:none;
+  background:none;
+  border:0;
+  color:var(--cream);
+  font-size:21px;
+}
+
+/* 3D HERO */
+
+.hero {
+  min-height:100svh;
+  position:relative;
+  display:flex;
+  align-items:center;
+  overflow:hidden;
+  isolation:isolate;
+  background:#0b140e;
+}
+
+#hanan3D {
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  z-index:0;
+  display:block;
+  pointer-events:none;
+}
+
+.hero:before {
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:1;
+  pointer-events:none;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(8,15,10,.05),
+      rgba(8,15,10,.12) 45%,
+      rgba(8,15,10,.75)
+    ),
+    linear-gradient(
+      0deg,
+      #101611 0%,
+      transparent 35%,
+      rgba(8,15,10,.12) 100%
+    );
+}
+
+.hero-inner {
+  position:relative;
+  z-index:3;
+  width:min(600px,90%);
+  margin-right:7%;
+  margin-left:auto;
+  text-align:right;
+  padding:150px 0 100px;
+}
+
+.eyebrow {
+  color:var(--gold);
+  letter-spacing:3px;
+  font-size:12px;
+}
+
+.hero h1 {
+  font-size:clamp(38px,6vw,76px);
+  line-height:1.4;
+  margin:18px 0;
+  font-weight:500;
+  text-shadow:0 12px 45px #000;
+}
+
+.hero h1 span {
+  color:var(--gold);
+  font-family:'Playfair Display',serif;
+  font-style:italic;
+}
+
+.hero p {
+  color:#e1ddcf;
+  max-width:520px;
+  margin:0 0 30px;
+  line-height:2.2;
+  font-size:15px;
+}
+
+.btn {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  border:1px solid var(--gold);
+  padding:13px 27px;
+  color:var(--gold);
+  background:#10161166;
+  transition:.3s;
+  cursor:pointer;
+}
+
+.btn:hover {
+  background:var(--gold);
+  color:var(--black);
+  transform:translateY(-3px);
+}
+
+.hero-orb {
+  position:absolute;
+  width:240px;
+  height:240px;
+  border-radius:50%;
+  border:1px solid #c5a56855;
+  box-shadow:0 0 90px #c5a56822,inset 0 0 60px #c5a56818;
+  top:23%;
+  left:12%;
+  transform:rotateX(65deg);
+  pointer-events:none;
+  z-index:2;
+}
+
+/* GENERAL SECTIONS */
+
+section:not(.hero) {
+  padding:100px 0;
+}
+
+.section-head {
+  text-align:center;
+  margin-bottom:48px;
+}
+
+.section-head small {
+  color:var(--gold);
+  letter-spacing:3px;
+}
+
+.section-head h2 {
+  font-size:clamp(28px,4vw,46px);
+  font-weight:500;
+  margin:10px 0;
+}
+
+.section-head p {
+  color:var(--muted);
+  font-size:14px;
+}
+
+/* INTRO */
+
+.intro {
+  background:var(--green);
+  position:relative;
+  overflow:hidden;
+}
+
+.intro:after {
+  content:"HANAN";
+  position:absolute;
+  font:100px 'Playfair Display';
+  opacity:.035;
+  left:2%;
+  bottom:-25px;
+  direction:ltr;
+}
+
+.intro-content {
+  max-width:760px;
+  text-align:center;
+  margin:auto;
+  line-height:2.2;
+  color:#e5e0d4;
+}
+
+.intro-content .gold {
+  color:var(--gold);
+}
+
+/* PRODUCTS */
+
+.products {
+  background:#111812;
+}
+
+.grid {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+}
+
+.product {
+  background:#172019;
+  border:1px solid #c5a56824;
+  overflow:hidden;
+  transition:.4s;
+  transform-style:preserve-3d;
+}
+
+.product:hover {
+  border-color:#c5a56899;
+  box-shadow:0 22px 50px #0006;
+}
+
+.product-img {
+  height:310px;
+  position:relative;
+  overflow:hidden;
+  background:#202a22;
+}
+
+.product-img img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:transform .8s;
+}
+
+.product:hover img {
+  transform:scale(1.08);
+}
+
+.product-info {
+  padding:22px;
+}
+
+.product-info h3 {
+  margin:0 0 7px;
+  font-size:19px;
+  font-weight:600;
+}
+
+.product-info .latin {
+  color:var(--gold);
+  font:italic 14px 'Playfair Display';
+  direction:ltr;
+  text-align:right;
+}
+
+.product-info p {
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.9;
+  min-height:50px;
+}
+
+.ingredients {
+  border-top:1px solid #c5a56830;
+  padding-top:13px;
+  color:#d7d0bf;
+  font-size:12px;
+  line-height:2;
+}
+
+.ingredients b {
+  color:var(--gold);
+}
+
+.product-bottom {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-top:18px;
+  gap:8px;
+}
+
+.price {
+  color:var(--gold);
+  font-weight:700;
+  font-size:12px;
+}
+
+.add {
+  background:transparent;
+  border:1px solid var(--gold);
+  color:var(--gold);
+  padding:8px 13px;
+  cursor:pointer;
+  font-size:12px;
+}
+
+.add:hover {
+  background:var(--gold);
+  color:var(--black);
+}
+
+/* STORY */
+
+.story {
+  background:linear-gradient(120deg,#101611,#1b3023);
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:55px;
+  align-items:center;
+}
+
+.story-image {
+  height:480px;
+  overflow:hidden;
+  position:relative;
+  transform-style:preserve-3d;
+}
+
+.story-image img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.story-copy h2 {
+  font-size:42px;
+  font-weight:500;
+}
+
+.story-copy h2 span {
+  color:var(--gold);
+}
+
+.story-copy p {
+  line-height:2.2;
+  color:var(--muted);
+}
+
+/* ORDER FORM */
+
+.order {
+  background:#17251b;
+}
+
+.order-box {
+  display:grid;
+  grid-template-columns:.8fr 1.2fr;
+  gap:40px;
+  background:#101611;
+  padding:38px;
+  border:1px solid #c5a56855;
+}
+
+.order-note h3 {
+  font-size:28px;
+  font-weight:500;
+}
+
+.order-note p {
+  color:var(--muted);
+  line-height:2;
+}
+
+.form {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+}
+
+.field {
+  display:flex;
+  flex-direction:column;
+  gap:7px;
+}
+
+.field.full {
+  grid-column:1/-1;
+}
+
+.field label {
+  font-size:12px;
+  color:var(--gold);
+}
+
+.field input,
+.field select,
+.field textarea {
+  background:#1a241c;
+  border:1px solid #c5a56840;
+  color:var(--cream);
+  padding:13px;
+  outline:none;
+  width:100%;
+  border-radius:0;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  border-color:var(--gold);
+}
+
+.field select option {
+  background:#172019;
+}
+
+.submit {
+  grid-column:1/-1;
+  background:var(--gold);
+  color:#101611;
+  border:0;
+  padding:15px;
+  font-weight:700;
+  cursor:pointer;
+}
+
+.submit:hover {
+  background:#ddc48e;
+}
+
+/* FOOTER */
+
+footer {
+  padding:40px 0;
+  text-align:center;
+  background:#0b100c;
+  border-top:1px solid #c5a56830;
+}
+
+footer .brandfoot {
+  color:var(--gold);
+  font-size:25px;
+  letter-spacing:4px;
+}
+
+footer p {
+  color:var(--muted);
+  font-size:12px;
+}
+
+/* ANIMATIONS */
+
+.reveal {
+  opacity:0;
+  transform:translateY(45px);
+}
+
+.floating {
+  animation:float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,100% {transform:translateY(0) rotateX(0)}
+  50% {transform:translateY(-15px) rotateX(3deg)}
+}
+
+/* RESPONSIVE */
+
+@media(max-width:800px) {
+
+  .navlinks {
+    display:none;
+    position:absolute;
+    top:78px;
+    right:0;
+    left:0;
+    background:#101611;
+    padding:25px;
+    flex-direction:column;
+    gap:18px;
+  }
+
+  .navlinks.open {
+    display:flex;
+  }
+
+  .menu {
+    display:block;
+  }
+
+  .brand {
+    left:50%;
+  }
+
+  .nav-icons {
+    gap:12px;
+  }
+
+  .grid {
+    grid-template-columns:repeat(2,1fr);
+    gap:13px;
+  }
+
+  .product-img {
+    height:230px;
+  }
+
+  .story {
+    grid-template-columns:1fr;
+    gap:25px;
+  }
+
+  .story-image {
+    height:320px;
+  }
+
+  .order-box {
+    grid-template-columns:1fr;
+    padding:23px;
+  }
+
+  .hero-inner {
+    width:88%;
+    margin:auto;
+    text-align:center;
+    padding-top:150px;
+  }
+
+  .hero p {
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .hero-orb {
+    width:130px;
+    height:130px;
+    left:3%;
+    top:25%;
+  }
+
+  section:not(.hero) {
+    padding:75px 0;
+  }
+}
+
+@media(max-width:520px) {
+
+  .grid {
+    grid-template-columns:1fr;
+  }
+
+  .product-img {
+    height:300px;
+  }
+
+  .form {
+    grid-template-columns:1fr;
+  }
+
+  .field.full,
+  .submit {
+    grid-column:auto;
+  }
+
+  .nav {
+    height:70px;
+  }
+
+  .navlinks {
+    top:70px;
+  }
+
+  .brand strong {
+    font-size:20px;
+  }
+
+  .hero p {
+    font-size:13px;
+  }
+
+  .hero-inner {
+    padding-top:125px;
+  }
+
+  .story-copy h2 {
+    font-size:32px;
+  }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  *,
+  *:before,
+  *:after {
+    scroll-behavior:auto!important;
+    animation:none!important;
+    transition:none!important;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<header>
+<div class="wrap nav">
+
+<button class="menu" id="menuBtn" aria-label="فتح القائمة">
+<i class="fa-solid fa-bars"></i>
+</button>
+
+<nav class="navlinks" id="navLinks">
+<a href="#home">الرئيسية</a>
+<a href="#soaps">الصابون</a>
+<a href="#candles">الشموع</a>
+<a href="#story">حكايتنا</a>
+<a href="#order">اطلبي الآن</a>
+</nav>
+
+<a class="brand" href="#home" aria-label="حنان">
+<span class="crown"><i class="fa-solid fa-crown"></i></span>
+<strong>حنان</strong>
+</a>
+
+<div class="nav-icons">
+<a href="#order" aria-label="الطلب">
+<i class="fa-solid fa-bag-shopping"></i>
+</a>
+</div>
+
+</div>
+</header>
+
+<main>
+
+<!-- 3D HERO -->
+
+<section class="hero" id="home">
+
+<canvas id="hanan3D"></canvas>
+
+<div class="hero-orb floating"></div>
+
+<div class="hero-inner">
+
+<div class="eyebrow" data-hero>
+طقوس من قلب الطبيعة
+</div>
+
+<h1 data-hero>
+حنان... <span>جمالٌ من الأرض</span>
+</h1>
+
+<p data-hero>
+صابون طبيعي وشموع مصنوعة بعناية، تستلهم هدوء الجبال وعمق الغابات ودفء التفاصيل الصغيرة.
+</p>
+
+<a class="btn" href="#soaps" data-hero>
+اكتشفي المجموعة
+<i class="fa-solid fa-arrow-left"></i>
+</a>
+
+</div>
+</section>
+
+<!-- INTRO -->
+
+<section class="intro">
+
+<div class="wrap intro-content reveal">
+
+<div class="section-head">
+<small>HANAN · NATURAL LUXURY</small>
+<h2>الجمال يبدأ من الطبيعة</h2>
+</div>
+
+<p>
+في <span class="gold">حنان</span> نؤمن أن لحظات العناية بالنفس تستحق شيئاً استثنائياً.
+اخترنا عالماً من الروائح الهادئة والخامات المستوحاة من الأرض، لنحوّل التفاصيل اليومية إلى طقوس من الراحة والجمال.
+</p>
+
+</div>
+</section>
+
+<!-- SOAP COLLECTION -->
+
+<section class="products" id="soaps">
+
+<div class="wrap">
+
+<div class="section-head reveal">
+<small>THE SOAP COLLECTION</small>
+<h2>مجموعة الصابون الطبيعي</h2>
+<p>ثلاث تجارب مستوحاة من مكونات الطبيعة</p>
+</div>
+
+<div class="grid">
+
+<article class="product reveal" data-product="صابون اللافندر">
+
+<div class="product-img">
+<img loading="lazy" src="https://images.unsplash.com/photo-1600428853876-fb5a850b444f?auto=format&fit=crop&w=900&q=85" alt="صابون طبيعي باللافندر">
+</div>
+
+<div class="product-info">
+<div class="latin">Lavender Soap</div>
+<h3>صابون اللافندر</h3>
+<p>تجربة عطرية هادئة بلمسة نباتية ناعمة.</p>
+
+<div class="ingredients">
+<b>التركيبة المقترحة:</b>
+زيت الزيتون، زيت جوز الهند، زبدة الشيا، عطر لافندر مخصص للصابون.
+</div>
+
+<div class="product-bottom">
+<span class="price">السعر يحدد لاحقاً</span>
+<button class="add" type="button">أضيفي للطلب</button>
+</div>
+</div>
+</article>
+
+<article class="product reveal" data-product="صابون الفحم">
+
+<div class="product-img">
+<img loading="lazy" src="https://images.unsplash.com/photo-1600857544200-b2f666a9a2ec?auto=format&fit=crop&w=900&q=85" alt="صابون الفحم الطبيعي">
+</div>
+
+<div class="product-info">
+<div class="latin">Charcoal Soap</div>
+<h3>صابون الفحم</h3>
+<p>تصميم بسيط مستوحى من ألوان الصخور الداكنة.</p>
+
+<div class="ingredients">
+<b>التركيبة المقترحة:</b>
+زيت الزيتون، زيت جوز الهند، زبدة الشيا، فحم نشط بدرجة تجميلية.
+</div>
+
+<div class="product-bottom">
+<span class="price">السعر يحدد لاحقاً</span>
+<button class="add" type="button">أضيفي للطلب</button>
+</div>
+</div>
+</article>
+
+<article class="product reveal" data-product="صابون العسل والشوفان">
+
+<div class="product-img">
+<img loading="lazy" src="https://images.unsplash.com/photo-1781080922537-7d5338f96e95?auto=format&fit=crop&w=900&q=85" alt="صابون العسل والشوفان">
+</div>
+
+<div class="product-info">
+<div class="latin">Honey & Oat</div>
+<h3>صابون العسل والشوفان</h3>
+<p>ألوان دافئة ولمسات مستوحاة من الحقول الطبيعية.</p>
+
+<div class="ingredients">
+<b>التركيبة المقترحة:</b>
+زيت الزيتون، زبدة الشيا، عسل، شوفان مطحون ناعم.
+</div>
+
+<div class="product-bottom">
+<span class="price">السعر يحدد لاحقاً</span>
+<button class="add" type="button">أضيفي للطلب</button>
+</div>
+</div>
+</article>
+
+</div>
+</div>
+</section>
+
+<!-- CANDLE COLLECTION -->
+
+<section class="products" id="candles" style="background:#17251b">
+
+<div class="wrap">
+
+<div class="section-head reveal">
+<small>THE CANDLE COLLECTION</small>
+<h2>مجموعة الشموع</h2>
+<p>روائح تملأ المكان بالدفء والسكينة</p>
+</div>
+
+<div class="grid">
+
+<article class="product reveal" data-product="شمعة اللافندر">
+
+<div class="product-img">
+<img loading="lazy" src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=900&q=85" alt="شمعة اللافندر">
+</div>
+
+<div class="product-info">
+<div class="latin">Lavender Candle</div>
+<h3>شمعة اللافندر</h3>
+<p>رائحة زهرية هادئة لأجواء مريحة.</p>
+
+<div class="ingredients">
+<b>التركيبة المقترحة:</b>
+شمع صويا، عطر لافندر مخصص لصناعة الشموع، فتيل مناسب.
+</div>
+
+<div class="product-bottom">
+<span class="price">السعر يحدد لاحقاً</span>
+<button class="add" type="button">أضيفي للطلب</button>
+</div>
+</div>
+</article>
+
+<article class="product reveal" data-product="شمعة الفانيليا">
+
+<div class="product-img">
+<img loading="lazy" src="https://images.unsplash.com/photo-1602874801007-bd458bb1b8b6?auto=format&fit=crop&w=900&q=85" alt="شمعة الفانيليا">
+</div>
+
+<div class="product-info">
+<div class="latin">Vanilla Candle</div>
+<h3>شمعة الفانيليا</h3>
+<p>نفحات دافئة وحلوة بلمسة كلاسيكية.</p>
+
+<div class="ingredients">
+<b>التركيبة المقترحة:</b>
+شمع صويا، عطر فانيليا مخصص للشموع، فتيل مناسب.
+</div>
+
+<div class="product-bottom">
+<span class="price">السعر يحدد لاحقاً</span>
+<button class="add" type="button">أضيفي للطلب</button>
+</div>
+</div>
+</article>
+
+<article class="product reveal" data-product="شمعة خشب الأرز">
+
+<div class="product-img">
+<img loading="lazy" src="https://images.unsplash.com/photo-1768690551852-124c1ffbc925?auto=format&fit=crop&w=900&q=85" alt="شمعة برائحة خشب الأرز">
+</div>
+
+<div class="product-info">
+<div class="latin">Cedarwood Candle</div>
+<h3>شمعة خشب الأرز</h3>
+<p>رائحة خشبية عميقة مستوحاة من الغابات.</p>
+
+<div class="ingredients">
+<b>التركيبة المقترحة:</b>
+شمع صويا، عطر خشب الأرز المخصص للشموع، فتيل مناسب.
+</div>
+
+<div class="product-bottom">
+<span class="price">السعر يحدد لاحقاً</span>
+<button class="add" type="button">أضيفي للطلب</button>
+</div>
+</div>
+</article>
+
+</div>
+</div>
+</section>
+
+<!-- BRAND STORY -->
+
+<section class="story" id="story">
+
+<div class="story-image reveal">
+<img loading="lazy" src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1200&q=85" alt="جبال وطبيعة">
+</div>
+
+<div class="story-copy reveal">
+
+<small style="color:var(--gold);letter-spacing:3px">
+OUR INSPIRATION
+</small>
+
+<h2>
+من سكون الجبال،
+<span>إلى تفاصيل يومك.</span>
+</h2>
+
+<p>
+تستلهم حنان هويتها من الطبيعة: من درجات الأخضر العميق، إلى دفء الخشب، وهدوء الجبال. نحتفي بالبساطة والحرفية وبجمال الأشياء المصنوعة بعناية.
+</p>
+
+<a class="btn" href="#order">اطلبي مجموعتك</a>
+
+</div>
+</section>
+
+<!-- ORDER -->
+
+<section class="order" id="order">
+
+<div class="wrap">
+
+<div class="section-head reveal">
+<small>YOUR NATURAL RITUAL</small>
+<h2>نموذج الطلب</h2>
+<p>اختاري منتجاتك واتركي لنا تفاصيل التوصيل</p>
+</div>
+
+<div class="order-box reveal">
+
+<div class="order-note">
+<h3>طلبك يبدأ من هنا</h3>
+
+<p>
+املئي المعلومات وسنجهز رسالة طلب عبر واتساب لتأكيد المنتجات والتفاصيل معك.
+</p>
+
+<p style="color:var(--gold);font-size:12px">
+HANAN · NATURAL LUXURY
+</p>
+</div>
+
+<form class="form" id="orderForm">
+
+<div class="field">
+<label for="name">الاسم الكامل</label>
+<input id="name" name="name" required placeholder="اسمك الكامل">
+</div>
+
+<div class="field">
+<label for="phone">رقم الهاتف</label>
+<input id="phone" name="phone" required inputmode="tel" placeholder="05 أو 06 أو 07...">
+</div>
+
+<div class="field">
+<label for="wilaya">الولاية</label>
+<input id="wilaya" name="wilaya" required placeholder="ولايتك">
+</div>
+
+<div class="field">
+<label for="product">المنتج</label>
+<select id="product" name="product" required>
+<option value="">اختاري المنتج</option>
+<option>صابون اللافندر</option>
+<option>صابون الفحم</option>
+<option>صابون العسل والشوفان</option>
+<option>شمعة اللافندر</option>
+<option>شمعة الفانيليا</option>
+<option>شمعة خشب الأرز</option>
+<option>مجموعة متنوعة</option>
+</select>
+</div>
+
+<div class="field">
+<label for="qty">الكمية</label>
+<select id="qty" name="qty">
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+</select>
+</div>
+
+<div class="field">
+<label for="delivery">طريقة التوصيل</label>
+<select id="delivery" name="delivery">
+<option>توصيل للمنزل</option>
+<option>توصيل للمكتب</option>
+</select>
+</div>
+
+<div class="field full">
+<label for="address">العنوان بالتفصيل</label>
+<input id="address" name="address" required placeholder="البلدية، الحي، العنوان...">
+</div>
+
+<div class="field full">
+<label for="notes">ملاحظات إضافية (اختياري)</label>
+<textarea id="notes" name="notes" rows="3" placeholder="أي تفاصيل إضافية حول طلبك"></textarea>
+</div>
+
+<button class="submit" type="submit">
+إرسال الطلب عبر واتساب
+<i class="fa-brands fa-whatsapp"></i>
+</button>
+
+</form>
+</div>
+</div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer>
+<div class="wrap">
+<div class="brandfoot">حنان ♛</div>
+<p>طقوس طبيعية، بتفاصيل من القلب.</p>
+<p>© 2026 HANAN. جميع الحقوق محفوظة.</p>
+</div>
+</footer>
+
+<!-- GSAP -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<script>
+/* MOBILE MENU */
+
+const menuBtn = document.getElementById('menuBtn');
+const navLinks = document.getElementById('navLinks');
+
+menuBtn.addEventListener('click', () => {
+  navLinks.classList.toggle('open');
+});
+
+navLinks.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+  });
+});
+
+/* PRODUCT BUTTONS */
+
+document.querySelectorAll('.add').forEach(btn => {
+
+  btn.addEventListener('click', () => {
+
+    const name = btn.closest('.product').dataset.product;
+
+    document.getElementById('product').value = name;
+
+    document.getElementById('order').scrollIntoView({
+      behavior:'smooth'
+    });
+
+  });
+
+});
+
+/* WHATSAPP ORDER */
+
+document.getElementById('orderForm').addEventListener('submit', e => {
+
+  e.preventDefault();
+
+  const d = new FormData(e.currentTarget);
+
+  const message =
+`طلب جديد من متجر حنان 🌿
+
+الاسم: ${d.get('name')}
+الهاتف: ${d.get('phone')}
+الولاية: ${d.get('wilaya')}
+المنتج: ${d.get('product')}
+الكمية: ${d.get('qty')}
+التوصيل: ${d.get('delivery')}
+العنوان: ${d.get('address')}
+ملاحظات: ${d.get('notes')}`;
+
+  // استبدلي الرقم برقم واتساب المتجر مع رمز الدولة دون +
+
+  const whatsappNumber = '213000000000';
+
+  window.open(
+    `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`,
+    '_blank'
+  );
+
+});
+
+/* GSAP ANIMATIONS */
+
+if (window.gsap && window.ScrollTrigger) {
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.from('[data-hero]', {
+    y:45,
+    opacity:0,
+    duration:1,
+    stagger:.18,
+    ease:'power3.out',
+    delay:.25
+  });
+
+  gsap.utils.toArray('.reveal').forEach(el => {
+
+    gsap.to(el, {
+      y:0,
+      opacity:1,
+      duration:1,
+      ease:'power3.out',
+      scrollTrigger:{
+        trigger:el,
+        start:'top 85%',
+        once:true
+      }
+    });
+
+  });
+
+  gsap.to('.hero-orb', {
+    y:100,
+    rotation:35,
+    ease:'none',
+    scrollTrigger:{
+      trigger:'.hero',
+      start:'top top',
+      end:'bottom top',
+      scrub:1
+    }
+  });
+
+  /* PRODUCT 3D TILT */
+
+  gsap.utils.toArray('.product').forEach(card => {
+
+    card.addEventListener('pointermove', e => {
+
+      if (innerWidth < 800) return;
+
+      const r = card.getBoundingClientRect();
+
+      const x = (e.clientX-r.left)/r.width-.5;
+      const y = (e.clientY-r.top)/r.height-.5;
+
+      gsap.to(card, {
+        rotateY:x*5,
+        rotateX:-y*5,
+        duration:.35,
+        transformPerspective:900
+      });
+
+    });
+
+    card.addEventListener('pointerleave', () => {
+
+      gsap.to(card, {
+        rotateX:0,
+        rotateY:0,
+        duration:.5
+      });
+
+    });
+
+  });
+
+}
+</script>
+
+<!-- THREE.JS 3D HERO -->
+
+<script type="module">
+
+import * as THREE from
+'https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js';
+
+import { RoundedBoxGeometry } from
+'https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/geometries/RoundedBoxGeometry.js';
+
+const canvas = document.getElementById('hanan3D');
+
+if (canvas) {
+
+  const scene = new THREE.Scene();
+
+  scene.background = new THREE.Color('#0b140e');
+
+  scene.fog = new THREE.FogExp2('#0b140e', 0.045);
+
+  const camera = new THREE.PerspectiveCamera(
+    38,
+    window.innerWidth / window.innerHeight,
+    0.1,
+    100
+  );
+
+  camera.position.set(0, 0.4, 9);
+
+  const renderer = new THREE.WebGLRenderer({
+    canvas,
+    antialias:true,
+    alpha:true
+  });
+
+  renderer.setPixelRatio(
+    Math.min(window.devicePixelRatio, 1.5)
+  );
+
+  renderer.setSize(
+    window.innerWidth,
+    window.innerHeight
+  );
+
+  renderer.outputColorSpace = THREE.SRGBColorSpace;
+
+  renderer.toneMapping = THREE.ACESFilmicToneMapping;
+  renderer.toneMappingExposure = 1.25;
+
+  renderer.shadowMap.enabled = true;
+  renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+
+  /* LIGHTING */
+
+  scene.add(
+    new THREE.AmbientLight('#d4e0d0', 1.4)
+  );
+
+  const goldLight = new THREE.PointLight(
+    '#e4b75f',
+    100,
+    15
+  );
+
+  goldLight.position.set(-3, 3, 3);
+  scene.add(goldLight);
+
+  const frontLight = new THREE.DirectionalLight(
+    '#fff1d2',
+    3
+  );
+
+  frontLight.position.set(3, 5, 6);
+  scene.add(frontLight);
+
+  const greenLight = new THREE.PointLight(
+    '#315b3d',
+    65,
+    20
+  );
+
+  greenLight.position.set(4, -1, -3);
+  scene.add(greenLight);
+
+  /* MOUNTAINS */
+
+  const mountainMaterial = new THREE.MeshStandardMaterial({
+    color:'#203b2c',
+    roughness:1,
+    metalness:0
+  });
+
+  const mountainDark = new THREE.MeshStandardMaterial({
+    color:'#14291e',
+    roughness:1
+  });
+
+  function createMountain(x,y,z,radius,height,material) {
+
+    const geometry = new THREE.ConeGeometry(
+      radius,
+      height,
+      7,
+      4
+    );
+
+    const mountain = new THREE.Mesh(
+      geometry,
+      material
+    );
+
+    mountain.position.set(x,y,z);
+
+    mountain.rotation.y = Math.random()*Math.PI;
+
+    mountain.scale.set(
+      1.3 + Math.random()*.5,
+      1,
+      .8 + Math.random()*.5
+    );
+
+    scene.add(mountain);
+
+    return mountain;
+  }
+
+  createMountain(-5,0,-7,3,5,mountainDark);
+  createMountain(-2.5,.2,-8,3.5,6,mountainMaterial);
+  createMountain(1,.1,-8,3.2,5.5,mountainDark);
+  createMountain(4,.3,-7,3.5,6,mountainMaterial);
+  createMountain(7,0,-8,3,5,mountainDark);
+
+  const distantMaterial = new THREE.MeshStandardMaterial({
+    color:'#304435',
+    transparent:true,
+    opacity:.45,
+    roughness:1
+  });
+
+  createMountain(-4,1,-12,4,7,distantMaterial);
+  createMountain(3,1,-13,5,8,distantMaterial);
+
+  /* SOAP PRODUCT */
+
+  const soapGroup = new THREE.Group();
+
+  const soapGeometry = new RoundedBoxGeometry(
+    2.5,
+    1.35,
+    .65,
+    6,
+    .18
+  );
+
+  const soapMaterial = new THREE.MeshStandardMaterial({
+    color:'#d5c8a5',
+    roughness:.38,
+    metalness:.02
+  });
+
+  const soap = new THREE.Mesh(
+    soapGeometry,
+    soapMaterial
+  );
+
+  soap.castShadow = true;
+  soap.receiveShadow = true;
+
+  soapGroup.add(soap);
+
+  /* SOAP LABEL */
+
+  const labelCanvas = document.createElement('canvas');
+
+  labelCanvas.width = 1024;
+  labelCanvas.height = 512;
+
+  const ctx = labelCanvas.getContext('2d');
+
+  ctx.fillStyle = '#183b2b';
+  ctx.fillRect(0,0,1024,512);
+
+  ctx.strokeStyle = '#c5a568';
+  ctx.lineWidth = 7;
+  ctx.strokeRect(25,25,974,462);
+
+  ctx.fillStyle = '#c5a568';
+  ctx.font = 'bold 100px Cairo, sans-serif';
+  ctx.textAlign = 'center';
+  ctx.fillText('حنان',512,245);
+
+  ctx.font = '36px Arial';
+  ctx.fillText('NATURAL LUXURY',512,330);
+
+  ctx.font = '27px Arial';
+  ctx.fillText('HANDCRAFTED SOAP',512,395);
+
+  const labelTexture = new THREE.CanvasTexture(labelCanvas);
+
+  labelTexture.colorSpace = THREE.SRGBColorSpace;
+
+  const label = new THREE.Mesh(
+    new THREE.PlaneGeometry(2.15,1.05),
+    new THREE.MeshStandardMaterial({
+      map:labelTexture,
+      roughness:.65,
+      metalness:.05
+    })
+  );
+
+  label.position.set(0,0,.331);
+
+  soapGroup.add(label);
+
+  // وضع الصابونة في الجهة اليسرى حتى لا تغطي النص
+
+  soapGroup.position.set(-2.1,-.55,1);
+
+  soapGroup.rotation.set(-.12,-.25,-.12);
+
+  scene.add(soapGroup);
+
+  /* GOLDEN RING */
+
+  const ringGeometry = new THREE.TorusGeometry(
+    1.8,
+    .012,
+    12,
+    120
+  );
+
+  const ringMaterial = new THREE.MeshBasicMaterial({
+    color:'#c5a568',
+    transparent:true,
+    opacity:.55
+  });
+
+  const ring = new THREE.Mesh(
+    ringGeometry,
+    ringMaterial
+  );
+
+  ring.position.set(-2.1,-.55,-.1);
+  ring.rotation.x = 1.25;
+
+  scene.add(ring);
+
+  /* MIST PARTICLES */
+
+  const mistCount = 180;
+
+  const mistPositions = new Float32Array(
+    mistCount*3
+  );
+
+  for (let i=0; i<mistCount; i++) {
+
+    mistPositions[i*3] =
+      (Math.random()-.5)*15;
+
+    mistPositions[i*3+1] =
+      Math.random()*4-2;
+
+    mistPositions[i*3+2] =
+      -2-Math.random()*8;
+
+  }
+
+  const mistGeometry = new THREE.BufferGeometry();
+
+  mistGeometry.setAttribute(
+    'position',
+    new THREE.BufferAttribute(mistPositions,3)
+  );
+
+  const mistMaterial = new THREE.PointsMaterial({
+    color:'#d9d4bd',
+    size:.055,
+    transparent:true,
+    opacity:.28,
+    sizeAttenuation:true
+  });
+
+  const mist = new THREE.Points(
+    mistGeometry,
+    mistMaterial
+  );
+
+  scene.add(mist);
+
+  /* ANIMATION */
+
+  const clock = new THREE.Clock();
+
+  const reducedMotion = window.matchMedia(
+    '(prefers-reduced-motion: reduce)'
+  ).matches;
+
+  function animate() {
+
+    requestAnimationFrame(animate);
+
+    const time = clock.getElapsedTime();
+
+    if (!reducedMotion) {
+
+      soapGroup.position.y =
+        -.55+Math.sin(time*.8)*.12;
+
+      soapGroup.rotation.y =
+        -.25+Math.sin(time*.35)*.09;
+
+      soapGroup.rotation.x =
+        -.12+Math.sin(time*.5)*.025;
+
+      ring.rotation.z = time*.08;
+
+      mist.position.x =
+        Math.sin(time*.12)*.25;
+
+      camera.position.x =
+        Math.sin(time*.15)*.12;
+
+      camera.position.y =
+        .4+Math.sin(time*.2)*.06;
+
+      goldLight.intensity =
+        90+Math.sin(time*.8)*12;
+
+    }
+
+    camera.lookAt(0,0,0);
+
+    renderer.render(scene,camera);
+
+  }
+
+  animate();
+
+  /* RESPONSIVE */
+
+  window.addEventListener('resize',() => {
+
+    camera.aspect =
+      window.innerWidth/window.innerHeight;
+
+    camera.updateProjectionMatrix();
+
+    renderer.setSize(
+      window.innerWidth,
+      window.innerHeight
+    );
+
+    renderer.setPixelRatio(
+      Math.min(window.devicePixelRatio,1.5)
+    );
+
+  });
+
+}
+
+</script>
+
+</body>
+</html>
